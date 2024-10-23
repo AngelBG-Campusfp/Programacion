@@ -14,7 +14,6 @@ for i in range(len(lista_reproduccion)):
     #print(lista_reproduccion[i])
 
 cancion_a_reproducir = int(input("Dime el número de canción que deseas escuchar: "))
-
 print(f"Estas escuchando la canción: {lista_reproduccion[cancion_a_reproducir]}") 
 
 
@@ -25,7 +24,7 @@ print(f"Estas escuchando la canción: {lista_reproduccion[cancion_a_reproducir]}
 
 
 
-""" contactos = {}
+contactos = {}
 
 while True:
     nombre = input("Ingresa el nombre de contacto o 'fin'para terminar: ")
@@ -43,7 +42,7 @@ buscar = input("Ingresa el nombre del contacto que deseas buscar: ")
 if buscar in contactos:
     print(f"El número de teléfono de {buscar} es {contactos[buscar]}.")
 else:
-    print(f"El contacto {buscar} no se encuentra en la lista.") """
+    print(f"El contacto {buscar} no se encuentra en la lista.")
 
 
 
@@ -53,7 +52,7 @@ else:
 
 
 
-""" tupla_viaje = ("Mallorca", "Benidorm", "Canarias", "Barcelona", "Valencia")
+tupla_viaje = ("Mallorca", "Benidorm", "Canarias", "Barcelona", "Valencia")
 print(tupla_viaje)
 
 for i in range(len(tupla_viaje)):
@@ -61,7 +60,7 @@ for i in range(len(tupla_viaje)):
     
 
 lugar_usuario = int(input("Ingresa la posicion para sabe rque lugar visitaras: "))
-print(f"Vas a viajar a: {tupla_viaje[lugar_usuario]}") """
+print(f"Vas a viajar a: {tupla_viaje[lugar_usuario]}")
 
 
 
@@ -71,7 +70,7 @@ print(f"Vas a viajar a: {tupla_viaje[lugar_usuario]}") """
 
 
 
-""" asignaturas = {}    
+asignaturas = {}    
 
 while True:
     asignatura_usuario = input("Introduce la asignatura: ")
@@ -85,7 +84,7 @@ while True:
 
    
 print("Resumen de las calificaciones: ")
-print(f"{asignaturas}: {notas_usuario}") """
+print(f"{asignaturas}: {notas_usuario}")
 
 
 
