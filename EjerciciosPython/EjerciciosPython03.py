@@ -1,5 +1,4 @@
-
-""" lista_reproduccion = []
+lista_reproduccion = []
 
 cancion = input('Dame el nombre de una canción: ')
 
@@ -16,7 +15,7 @@ for i in range(len(lista_reproduccion)):
 
 cancion_a_reproducir = int(input("Dime el número de canción que deseas escuchar: "))
 
-print(f"Estas escuchando la canción: {lista_reproduccion[cancion_a_reproducir]}") """
+print(f"Estas escuchando la canción: {lista_reproduccion[cancion_a_reproducir]}") 
 
 
 
