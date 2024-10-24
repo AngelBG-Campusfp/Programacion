@@ -24,7 +24,7 @@ while True:
     print(f"La maquina ha elegido {numero_random}")
 
     #Hacemos que si yo gano a los valores random de la maquina, imprima que he ganado y sume 1 a mi contador
-    if eleccion == 1  and numero_random == 'Tijera' or eleccion == 2  and numero_random == 'Piedra' or eleccion == 3  and numero_random == 'Papel':
+    if eleccion == 1  and numero_random == 'Tijera' | eleccion == 2  and numero_random == 'Piedra' | eleccion == 3  and numero_random == 'Papel':
         print("\n¡Has ganado la ronda!")
         victoria_usuario += 1
 
