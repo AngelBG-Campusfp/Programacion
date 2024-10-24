@@ -14,7 +14,7 @@ for i in range(len(lista_reproduccion)):
     #print(lista_reproduccion[i])
 
 cancion_a_reproducir = int(input("Dime el número de canción que deseas escuchar: "))
-print(f"Estas escuchando la canción: {lista_reproduccion[cancion_a_reproducir]}") 
+print(f"Estas escuchando la canción: {lista_reproduccion[cancion_a_reproducir]}")
 
 
 
