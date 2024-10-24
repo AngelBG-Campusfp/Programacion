@@ -29,7 +29,7 @@ while True:
         victoria_usuario += 1
 
         #Hacemos que si la amquina a mis valores introducidos, imprima que ha ganado la maquina y sume 1 a su contador
-    elif eleccion == 1  and numero_random == 'Papel' or eleccion == 2  and numero_random == 'Tijera' or eleccion == 3  and numero_random == 'Piedra':
+    elif eleccion == 1  and numero_random == 'Papel' | eleccion == 2  and numero_random == 'Tijera' | eleccion == 3  and numero_random == 'Piedra':
         print("\nHas perdido la ronda")
         victoria_maquina += 1
 
