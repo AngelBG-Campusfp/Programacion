@@ -6,7 +6,7 @@ saldo_inicial = 0
 while True:
     saldo_inicial = float(input("Saldo inicial: "))
     if saldo_inicial >= 0:
-        print(f"\nSaldo inicial: {saldo_inicial}")
+        print(f"\nSaldo inicial: {saldo_inicial} €")
         break
     else:
         print("El valor no puede ser negativo. Escríbelo de nuevo.")
@@ -18,12 +18,11 @@ while True:
     print("1 - Ingresar Dinero")
     print("2 - Retirar Dinero")
     print("3 - Mostrar Saldo")
-    print("4 - Estadísticas")
-    print("5 - Salir")
+    print("4 - Salir")
     
     # Elegir una opción válida
     opcion = int(input("Elige una opción: "))
-    while opcion not in [1, 2, 3, 4, 5]:
+    while opcion not in [1, 2, 3, 4,]:
         print("Opción incorrecta. Elige de nuevo.")
         opcion = int(input("Elige una opción: "))
 
@@ -52,7 +51,7 @@ while True:
         print(f"\nTu saldo actual es: {saldo_inicial} €.")
 
 
-    elif opcion == 5:  # Salir
+    elif opcion == 4:  # Salir
         print("Saliendo del programa...")
         break
 
