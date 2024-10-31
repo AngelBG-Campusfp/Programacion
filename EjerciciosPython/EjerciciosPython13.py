@@ -32,7 +32,7 @@ except FileNotFoundError:
     print('El archivo no fue encontrado')
 
 try:
-    with open("temperaturas.txt", "w") as temepraturas:
+    with open("temperaturas.txt", "r") as temepraturas:
         array1 = np.mean(grados_celsius)
         array2 = np.max(grados_celsius)
         array3 = np.min(grados_celsius)
