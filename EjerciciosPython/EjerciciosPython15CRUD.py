@@ -20,7 +20,7 @@ def crear_categoria(conexion):
     # con los valores que añada el usuario
     cursor.execute(nueva_categoria, valores)
     conexion.commit()
-    print('Catgoria creada')
+    print('Catgoria creada \n')
 
     #Cerramos el cursor
     cursor.close()
@@ -54,20 +54,20 @@ def actualizar_categoria(conexion):
     #Creo el cursor
     cursor = conexion.cursor()
     id_Categoria2 = int(input('ID de la categoria quye desea modificar: '))
-    nombre_nuevacategoria = input('Nombre para la categoria que desea modificar')
+    nombre_nuevacategoria = input('Nombre para la categoria que desea modificar: ')
     
     #Creamos la sentencia SQL
     actualizar_registro = f""" UPDATE categoria
     SET categoria = %s WHERE idcategoria = %s; """
 
     #Asignamos los valores para %s
-    valores = (id_Categoria2, nombre_nuevacategoria)
+    valores = (nombre_nuevacategoria, id_Categoria2)
 
     #Hacmeos que se ejecute la sentencia 
     # con los valores que añada el usuario
     cursor.execute(actualizar_registro, valores)
     conexion.commit()
-
+    print('Categoria Actualizada con exito\n')
     #Cerramos el cursor
     cursor.close()
 
@@ -78,20 +78,20 @@ def actualizar_categoria(conexion):
 def eliminar_categoria(conexion):
     #Creamos el cursor
     cursor = conexion.cursor()
-    id_Categoria3 = int(input('ID de la categoria que desea eliminar'))
+    id_Categoria3 = int(input('ID de la categoria que desea eliminar: '))
     
     #Creamos la sentencia SQL
     eliminar_registro = f""" DELETE FROM categoria
     WHERE idcategoria = %s; """
 
     #Asignamos los valores para %s
-    valores = (id_Categoria3)
+    valores = (id_Categoria3,)
     
     #Hacmeos que se ejecute la sentencia 
     # con los valores que añada el usuario
     cursor.execute(eliminar_registro, valores)
-    cursor.commit()
-    print('Categoria eliminada con exito')
+    conexion.commit()
+    print('Categoria eliminada con exito\n')
 
     #Cerramos el cursor
     cursor.close()

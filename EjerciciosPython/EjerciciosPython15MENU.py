@@ -10,7 +10,7 @@ def menu(conexion):
         print('2. Leer categorias existentes')
         print('3. Actualizar una categoria')
         print('4. Eliminar una categoria')
-        print('5. Salir')
+        print('5. Salir\n')
         opcion_usuario = int(input('Seleccione una opcion: '))
 
         #Si el usuario elige 1,
