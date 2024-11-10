@@ -14,7 +14,7 @@ if conexion.is_connected():
 
 #Llamo a una funcion de otro archivo, 
 #que hace todo lo necesario
-EjerciciosPython15MENU.menu(conexion)
+EjerciciosPython15MENU.menu_tablas(conexion)
 
 #cerramos la conexion con la base de datos
 conexion.close()
