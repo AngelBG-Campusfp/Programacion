@@ -8,7 +8,7 @@ def mostrar_menu(conexion):
         print("3. Buscar Cliente por E-mail")
         print("4. Realizar Compra")
         print("5. Seguimiento de Compra")
-        print("6. Salir")
+        print("6. Salir\n")
 
         opcion = int(input("Seleccione una opción: "))
 
@@ -21,7 +21,7 @@ def mostrar_menu(conexion):
         elif opcion == 4:
             Fase2Operaciones.realizar_compra(conexion)
         elif opcion == 5:
-            Fase2Operaciones.seguimiento_compra()
+            Fase2Operaciones.seguimiento_compra(conexion)
         elif opcion == 6:
             print("Saliendo del sistema...")
             break

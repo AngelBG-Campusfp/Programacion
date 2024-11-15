@@ -4,7 +4,7 @@ from datetime import datetime
 def registrar_cliente(conexion):
     cursor = conexion.cursor()
     
-    nombre = input("Nombre: ")
+    nombre = input("\nNombre: ")
     apellido = input("Apellido: ")
     email = input("E-mail: ")
     telefono = input("Telefono: ")
@@ -34,7 +34,7 @@ def ver_clientes(conexion):
     cursor.execute(ver_todos_clientes)
     clientes = cursor.fetchall()
     
-    print("Clientes registrados:")
+    print("\nClientes registrados:")
     for i in clientes:
         print(i)
     cursor.close()
@@ -44,7 +44,7 @@ def ver_clientes(conexion):
 def buscar_cliente(conexion):
     cursor = conexion.cursor()
     
-    email = input("Ingresa el E-mail del cliente que desea buscar: ")
+    email = input("\nIngresa el E-mail del cliente que desea buscar: ")
     
     buscar_cliente_especifico = f"SELECT * FROM cliente WHERE E_Mail = %s"
     valores = (email,)
@@ -70,7 +70,7 @@ def buscar_cliente(conexion):
 def realizar_compra(conexion):
     cursor = conexion.cursor()
     
-    id_cliente = int(input("ID del cliente que desea realizar la compra: "))
+    id_cliente = int(input("\nID del cliente que desea realizar la compra: "))
     cursor.execute("SELECT * FROM productos")
     productos = cursor.fetchall()
 
@@ -80,7 +80,7 @@ def realizar_compra(conexion):
 
     pedido_productos = []
     while True:
-        id_producto = int(input("ID del producto a comprar (0 para finalizar): "))
+        id_producto = int(input("\nID del producto a comprar (0 para finalizar): "))
         if id_producto == 0:
             break
         cantidad = int(input("Cantidad: "))
@@ -113,7 +113,7 @@ def realizar_compra(conexion):
 def seguimiento_compra(conexion):
     cursor = conexion.cursor()
     
-    id_pedido = int(input("Ingresa el número de pedido: "))
+    id_pedido = int(input("\nIngresa el número de pedido: "))
     
     seguir_pedido = f"""
         SELECT c.Nombre, c.Apellido, c.E_Mail, p.fecha_pedido, d.Id_Producto, d.Cantidad, d.Precio
@@ -127,7 +127,7 @@ def seguimiento_compra(conexion):
     detalles = cursor.fetchall()
 
     if detalles:
-        print("Detalles del pedido:")
+        print("\nDetalles del pedido:")
         for detalle in detalles:
             print(f"Cliente: {detalle[0]} {detalle[1]}, Email: {detalle[2]}, Fecha: {detalle[3]}")
             print(f"Producto ID: {detalle[4]}, Cantidad: {detalle[5]}, Precio: {detalle[6]}")
