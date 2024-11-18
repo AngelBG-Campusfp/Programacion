@@ -1,5 +1,6 @@
 #--------------------------------------Tabla clientes--------------------------------------
 
+#funcion para crear cliente
 def crear_cliente(conexion):
     cursor = conexion.cursor()
 
@@ -21,6 +22,7 @@ def crear_cliente(conexion):
     cursor.close()
 
 
+#funcion para leer todos los clientes
 def leer_cliente(conexion):
     cursor = conexion.cursor()
 
@@ -36,6 +38,7 @@ def leer_cliente(conexion):
     cursor.close()
 
 
+#Funcion para actualizar el cliente deseado
 def actualizar_cliente(conexion):
     cursor = conexion.cursor()
 
@@ -58,6 +61,7 @@ def actualizar_cliente(conexion):
     cursor.close()
 
 
+#Funcion para eliminar un cliente
 def eliminar_cliente(conexion):
     cursor = conexion.cursor()
 
@@ -85,6 +89,7 @@ def eliminar_cliente(conexion):
 
 #--------------------------------------Tabla actividades--------------------------------------
 
+#Funcion para crear una actividad
 def nueva_actividad(conexion):
     cursor = conexion.cursor()
 
@@ -106,6 +111,7 @@ def nueva_actividad(conexion):
     cursor.close()
 
 
+#Fncion para leer todas las actividades
 def leer_actividad(conexion):
     cursor = conexion.cursor()
 
@@ -125,6 +131,7 @@ def leer_actividad(conexion):
     cursor.close()
     
 
+#Funcion para actualizar la actividad deseada
 def actualizar_actividad(conexion):
     cursor = conexion.cursor()
 
@@ -149,6 +156,7 @@ def actualizar_actividad(conexion):
     cursor.close()
 
 
+#Funcion para eliminar la actividad deseada
 def eliminar_actividad(conexion):
     cursor = conexion.cursor()
 
@@ -171,6 +179,7 @@ def eliminar_actividad(conexion):
 
 #--------------------------------------Tabla entrenadores--------------------------------------
 
+#Funcion para crear un entrenador
 def crear_entrenador(conexion):
     cursor = conexion.cursor()
 
@@ -190,6 +199,7 @@ def crear_entrenador(conexion):
     cursor.close()
 
 
+#Funcion para ver todos los entrenadores
 def leer_entrenador(conexion):
     cursor = conexion.cursor()
 
@@ -207,6 +217,7 @@ def leer_entrenador(conexion):
     cursor.close()
 
 
+#Funcion para actualizar un entrenador
 def actualizar_entrenador(conexion):
     cursor = conexion.cursor()
 
@@ -229,6 +240,7 @@ def actualizar_entrenador(conexion):
     cursor.close()
 
 
+#Funcion para eliminar el entrenador deseado
 def eliminar_entrenador(conexion):
     cursor = conexion.cursor()
 
@@ -249,6 +261,7 @@ def eliminar_entrenador(conexion):
 
 #--------------------------------------Tabla inscripciones--------------------------------------
 
+#Funcion para registrar una inscripcion
 def registrar_inscripcion(conexion):
     cursor = conexion.cursor()
 
@@ -266,6 +279,7 @@ def registrar_inscripcion(conexion):
     print('\nLa inscripcion se ha registrado correctamente!')
 
 
+#Funcion para leer inscripciones
 def leer_inscripcion(conexion):
     cursor = conexion.cursor()
 
@@ -284,4 +298,3 @@ def leer_inscripcion(conexion):
 
     cursor.close()
 
-    
