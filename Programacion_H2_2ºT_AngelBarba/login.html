@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 400px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus {
+            border-color: #764ba2;
+        }
+
+        .checkbox-box {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-box input {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        .checkbox-box a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .checkbox-box a:hover {
+            color: #653d91;
+        }
+
+        .btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 12px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #5661d6, #653d91);
+        }
+
+        .toggle-text {
+            margin-top: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .toggle-text a {
+            color: #764ba2;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .toggle-text a:hover {
+            color: #653d91;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Iniciar Sesión</h2>
+        <form action="sesion/login.php" method="POST">
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="passwd" placeholder="Contraseña" required>
+            </div>
+            <div class="checkbox-box">
+                <input type="checkbox" id="politicas" name="politicas" required>
+                <label for="politicas">Acepto las <a href="politicas.html">Políticas de Privacidad</a></label>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <p class="toggle-text">¿No tienes cuenta? <a href="index.html">Regístrate</a></p>
+    </div>
+
+</body>
+</html>
+
+
